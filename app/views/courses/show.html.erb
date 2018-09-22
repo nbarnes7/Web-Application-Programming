@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="./">Banner!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/courses">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/sections">Sections</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @course.name %>
+</p>
+
+<p>
+  <strong>Department:</strong>
+  <%= @course.department %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @course.number %>
+</p>
+
+<p>
+  <strong>Credithours:</strong>
+  <%= @course.credithours %>
+</p>
+
+<p>
+  <strong>Sections:</strong>
+  <% @course.sections.each do |section| %>
+    <li> <%= section.number %>
+  <% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>
