@@ -1,6 +1,12 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Students</h1>
+
+<%= form_tag(students_path, method: :get) do %>
+  Name <%= text_field_tag :number, params[:number] %>
+  <%= submit_tag 'Search', number: nil %>
+<% end %>
 
 <table>
   <thead>

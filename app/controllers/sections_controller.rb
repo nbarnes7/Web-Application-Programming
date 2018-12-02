@@ -4,7 +4,11 @@ class SectionsController < ApplicationController
   # GET /sections
   # GET /sections.json
   def index
-    @sections = Section.all
+    if params[:number]
+      @sections = Section.where('number LIKE ?', "%#{params[:number]}%")
+    else
+      @sections = Section.all
+      end
   end
 
   # GET /sections/1

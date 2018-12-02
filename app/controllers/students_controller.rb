@@ -4,9 +4,12 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
   def index
+    if params[:number]
+      @students = Student.where('number LIKE ?', "%#{params[:number]}%")
+    else
     @students = Student.all
   end
-
+end
   # GET /students/1
   # GET /students/1.json
   def show
@@ -69,6 +72,6 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:first_name, :last_name, :number)
+      params.require(:student).permit(:first_name, :last_name, :number, :section_id)
     end
 end

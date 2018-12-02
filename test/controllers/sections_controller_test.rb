@@ -5,6 +5,15 @@ class SectionsControllerTest < ActionDispatch::IntegrationTest
     @section = sections(:one)
   end
 
+  test "shouldn't find a missing section" do
+    assert Section.where("semester like ?", "winter").length == 0
+  end
+
+  test "should not save sections without data" do
+     section = Section.new
+    assert_not section.save
+  end
+
   test "should get index" do
     get sections_url
     assert_response :success

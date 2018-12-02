@@ -5,6 +5,15 @@ class CoursesControllerTest < ActionDispatch::IntegrationTest
     @course = courses(:one)
   end
 
+  test "shouldn't find a missing course" do
+    assert Course.where("name like ?", "quidditch").length == 0
+  end
+
+  test "should not save courses without data" do
+    course = Course.new
+    assert_not course.save
+  end
+
   test "should get index" do
     get courses_url
     assert_response :success

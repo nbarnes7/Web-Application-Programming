@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Banner!</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<button onclick="fetch('students', ['first_name', 'last_name', 'number']);">Students</button>
+<button onclick="fetch('courses', ['name', 'number', 'department', 'credithours'])">Courses</button>
+<button onclick="fetch('enrollments', ['section_id', 'student_id'])">Enrollments</button>
+<button onclick="fetch('sections', ['course_id', 'semester', 'number', 'roomnumber'])">Sections</button>
+
+<div id="list">
+</div>
+
+<script>
+    function getSection(path, id) {
+        var result = null;
+        $.get({
+            url: "http://localhost:3000/" + path + ".json",
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                result = data;
+            }
+        });
+        for (thing in result) {
+            if (result[thing].id == id) {
+                var thing4 = " &nbsp;&nbsp; Enrolled in: "
+                thing4 += result[thing].course.name;
+                thing4 += " &nbsp;&nbsp; Section Number: "
+                thing4 += result[thing].number;
+                return thing4;
+            }
+            else {
+            }
+        }
+    }
+
+    function getStudent(path, id) {
+        var result = null;
+        $.get({
+            url: "http://localhost:3000/" + path + ".json",
+            dataType: "json",
+            async: false,
+            success: function (data) {
+                result = data;
+            }
+        });
+        for (thing2 in result) {
+            if (result[thing2].id == id) {
+                var thing3 = "Student Name: "
+                thing3 += result[thing2].first_name;
+                thing3 += " " + result[thing2].last_name;
+                return thing3;
+            }
+            else {
+            }
+        }
+    }
+
+    var fetch = function(which, fields) {
+        $("#list").empty();
+        $.get("http://localhost:3000/" + which + ".json", true)
+            .done(function(json) {
+                for (item in json) {
+                    lis = "<li>";
+                    for (field in fields) {
+                        if (which === 'sections' && field == 0) {
+                            var z = json[item].course.name
+                        }
+                        else if (which === 'enrollments') {
+                            var x = getSection('sections', json[item].section_id)
+                            var y = getStudent('students', json[item].student_id)
+                        }
+                        else {
+                            lis += json[item][fields[field]] + "&nbsp;&nbsp;&nbsp;&nbsp; ";
+                        }
+                    }
+                    if (which === 'sections') {
+                        lis = lis + z;
+                    }
+                    else if (which === 'enrollments') {
+                        lis += y;
+                        lis += " " + x;
+                    }
+                    lis += "</li>";
+                    $("#list").append(lis);
+                }
+            })
+            .fail(function(json){ console.log("fail"); })
+    }
+</script>
+
+</body>
+</html>

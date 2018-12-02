@@ -5,6 +5,15 @@ class StudentsControllerTest < ActionDispatch::IntegrationTest
     @student = students(:one)
   end
 
+  test "shouldn't find a missing person" do
+    assert Student.where("first_name like ?", "Bob").length == 0
+  end
+
+  test "should not save student without data" do
+    student = Student.new
+    assert_not student.save
+  end
+
   test "should get index" do
     get students_url
     assert_response :success
