@@ -2,41 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a75715ea-b74f-4499-b1b2-6216b9b96e11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/spa1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/courses_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/courses_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/sections_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sections_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/students_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/students_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/course.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/course.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/section.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/section.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/student.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/student.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/courses/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/courses/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/courses/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/courses/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/courses/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/courses/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/courses/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/courses/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sections/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sections/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sections/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sections/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sections/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sections/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sections/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sections/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/sections/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sections/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/students/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/students/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/students/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/students/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/students/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/students/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/students/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/students/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20181012171443_create_join_table_section_student.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/courses_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/courses_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/sections_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/sections_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/students_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/students_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -494,12 +460,12 @@
       <workItem from="1540498738897" duration="517000" />
       <workItem from="1543266295165" duration="2763000" />
       <workItem from="1543344370188" duration="19649000" />
-      <workItem from="1543452141537" duration="13582000" />
+      <workItem from="1543452141537" duration="14634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83916000" />
+    <option name="totallyTimeSpent" value="84968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -517,8 +483,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22778346" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.64285713" visible="true" weight="0.49233913" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.35714287" side_tool="true" visible="true" weight="0.49233913" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
